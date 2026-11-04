@@ -103,6 +103,9 @@ a:hover { color: var(--bordeaux-fonce); }
 }
 
 .marque {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   font-family: var(--serif);
   font-style: italic;
   font-size: 26px;
