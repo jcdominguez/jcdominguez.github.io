@@ -13,14 +13,13 @@ window.FORMATIONS = {
         "Classes, objets et encapsulation",
         "Héritage, interfaces et polymorphisme",
         "Collections, génériques et streams",
-        "Exceptions et gestion des erreurs",
-        "Projet fil rouge, clean code et principes SOLID"
+        "Exceptions et gestion des erreurs"
       ],
       "sousTitre": "Fondamentaux, projets et bonnes pratiques",
       "categorie": "Java",
       "niveau": "Débutant à intermédiaire",
       "prerequis": "Bases d’algorithmique",
-      "public": "Personnes en reconversion, étudiants, développeurs venant d’un autre langage.",
+      "public": "Développeurs venant d’un autre langage.",
       "objectif": "Écrire des programmes Java structurés et lisibles, et maîtriser les concepts objet à travers un projet fil rouge.",
       "num": "01"
     },
@@ -38,24 +37,27 @@ window.FORMATIONS = {
       "categorie": "Java",
       "niveau": "Intermédiaire",
       "prerequis": "Java et POO",
-      "public": "Développeurs Java, fin de parcours de reconversion.",
+      "public": "Développeurs Java",
       "objectif": "Concevoir, tester et déployer une API REST complète avec l’écosystème Spring.",
       "num": "02"
     },
     {
       "titre": "SQL",
       "modules": [
-        "Modélisation relationnelle (MCD, MLD)",
-        "SQL : requêtes, jointures et agrégations",
-        "Index, transactions et performances",
-        "Spécificités de MySQL et PostgreSQL"
+        "Modélisation relationnelle : MCD, MLD et normalisation",
+        "Création des tables, clés et contraintes d’intégrité",
+        "Insertion, modification et suppression des données",
+        "Requêtes : sélection, filtres, tris et jointures",
+        "Agrégations, regroupements et sous-requêtes",
+        "Vues et transactions",
+        "Index et optimisation des requêtes"
       ],
       "sousTitre": "MySQL, PostgreSQL",
       "categorie": "Base de données",
       "niveau": "Débutant à intermédiaire",
       "prerequis": "Aucun",
       "public": "Tous publics techniques.",
-      "objectif": "Modéliser une base relationnelle et l’interroger efficacement avec SQL sur MySQL et PostgreSQL.",
+      "objectif": "Modéliser une base relationnelle et l’interroger efficacement avec SQL sur MySQL ou PostgreSQL.",
       "num": "03"
     },
     {
@@ -72,7 +74,7 @@ window.FORMATIONS = {
       "categorie": "Web",
       "niveau": "Débutant",
       "prerequis": "Aucun",
-      "public": "Personnes en reconversion, étudiants.",
+      "public": "Débutants en frontend web.",
       "objectif": "Construire des pages web accessibles et responsives, puis les rendre dynamiques avec JavaScript.",
       "num": "04"
     },
@@ -98,7 +100,7 @@ window.FORMATIONS = {
       "titre": "Test Driven Development en Java",
       "modules": [
         "Le cycle red, green, refactor",
-        "JUnit 5 : assertions et tests paramétrés",
+        "JUnit : assertions et tests paramétrés",
         "Doubles de test avec Mockito",
         "Refactoring sous filet de tests",
         "Tester du code existant",
@@ -119,8 +121,8 @@ window.FORMATIONS = {
         "Reactor : Mono, Flux et opérateurs",
         "Spring WebFlux : contrôleurs et routes fonctionnelles",
         "WebClient et appels non bloquants",
-        "Accès aux données réactif avec R2DBC",
-        "Tests avec StepVerifier"
+        "Persistance réactive avec Spring Data MongoDB",
+        "Tests des flux réactifs et des API WebFlux"
       ],
       "sousTitre": "WebFlux et Reactor",
       "categorie": "Java",
@@ -133,18 +135,20 @@ window.FORMATIONS = {
     {
       "titre": "NoSQL",
       "modules": [
-        "Théorème CAP et compromis",
-        "Clé-valeur, document, colonnes, graphe",
-        "Choisir selon le cas d’usage",
-        "MongoDB : CRUD, agrégation et index",
-        "Modélisation orientée document",
-        "Réplication et sharding"
+        "Du relationnel au NoSQL : différences et cas d’usage",
+        "Familles NoSQL : clé-valeur, document, colonnes larges et graphe",
+        "Choix d’une base selon les besoins et les garanties attendues",
+        "Intégrité des données et cohérence entre les copies",
+        "MongoDB : modélisation, manipulation des données et indexation",
+        "Principes de réplication et de partitionnement des données",
+        "Introduction à l’exploitation, aux services managés et à la migration",
+        "Panorama du Big Data : stockage avec HBase et traitements avec Spark"
       ],
       "sousTitre": "Familles de bases NoSQL, cas d’usage et MongoDB",
       "categorie": "Base de données",
       "niveau": "Intermédiaire",
       "prerequis": "Notions de bases de données",
-      "public": "Développeurs, étudiants.",
+      "public": "Personnes ayant des bases en SQL et souhaitant découvrir les bases NoSQL et leurs usages.",
       "objectif": "Comprendre les familles NoSQL, choisir selon le cas d’usage et exploiter MongoDB.",
       "num": "08"
     }
