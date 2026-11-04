@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formations pour développeurs</title>
+<meta name="description" content="Conception et animation de formations techniques sur mesure pour les professionnels, les personnes en reconversion et les étudiants.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="entete conteneur">
+<a class="marque" href="#top">Formations pour développeurs</a>
+<nav class="nav" aria-label="Navigation principale">
+<a href="#approche">Approche</a>
+<a href="#formations">Formations</a>
+<a href="#publics">Publics</a>
+<a class="bouton bouton-nav" href="#contact">Nous contacter</a>
+</nav>
+</header>
+
+<main>
+<section id="top" class="hero conteneur">
+<div class="hero-texte">
+<p class="surtitre hero-surtitre">Conception &amp; animation de formations</p>
+<h1>Des formations techniques <em>construites</em> autour de vos objectifs.</h1>
+<p class="hero-intro">Depuis 2018, nous concevons et animons des formations sur mesure pour les professionnels, les personnes en reconversion et les étudiants. Programmes, supports pédagogiques et travaux pratiques sont pensés pour le niveau et les objectifs de chaque public.</p>
+<div class="hero-actions">
+<a class="bouton" href="#formations">Voir les formations</a>
+<a class="bouton bouton-contour" href="#contact">Demander un programme sur mesure</a>
+</div>
+</div>
+<dl class="chiffres">
+<div>
+<dt>Depuis 2018</dt>
+<dd>Conception et animation de formations</dd>
+</div>
+<div>
+<dt id="nb-formations">8 formations</dt>
+<dd>Java, Spring, données, web et qualité logicielle</dd>
+</div>
+<div>
+<dt>3 publics</dt>
+<dd>Professionnels, reconversion, étudiants</dd>
+</div>
+</dl>
+</section>
+
+<section id="approche" class="approche">
+<div class="conteneur approche-grille">
+<h2 class="titre-section">Notre approche</h2>
+<div class="etapes">
+<div class="etape">
+<p class="etape-num">01</p>
+<h3>Analyse du besoin</h3>
+<p>Niveau des participants, objectifs visés, contraintes de durée et de format : tout part de votre contexte.</p>
+</div>
+<div class="etape">
+<p class="etape-num">02</p>
+<h3>Conception</h3>
+<p>Programme détaillé, supports pédagogiques et travaux pratiques construits pour ce public précis.</p>
+</div>
+<div class="etape">
+<p class="etape-num">03</p>
+<h3>Animation</h3>
+<p>Des sessions rythmées par la pratique : exercices, projets et retours individualisés.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="formations" class="formations conteneur">
+<div class="colonne-titre">
+<h2 class="titre-section">Formations proposées</h2>
+<p class="formations-aide">Sélectionnez une formation pour afficher son programme détaillé.</p>
+</div>
+<div class="catalogue">
+<div id="filtres" class="filtres" role="group" aria-label="Filtrer par thème"></div>
+<ul id="liste" class="liste"></ul>
+<article class="programme" aria-live="polite">
+<p id="p-categorie" class="surtitre"></p>
+<h3 id="p-titre"></h3>
+<p id="p-sous-titre" class="programme-sous-titre"></p>
+<div class="fiches">
+<div class="fiche">
+<p class="fiche-libelle">Niveau</p>
+<p id="p-niveau" class="fiche-valeur"></p>
+</div>
+<div class="fiche">
+<p class="fiche-libelle">Prérequis</p>
+<p id="p-prerequis" class="fiche-valeur"></p>
+</div>
+</div>
+<h4>Objectifs</h4>
+<p id="p-objectif" class="programme-texte"></p>
+<h4 class="titre-modules">Programme</h4>
+<ol id="p-modules" class="modules"></ol>
+<h4>Public</h4>
+<p id="p-public" class="programme-texte programme-public"></p>
+<div class="programme-actions">
+<a id="p-demande" class="bouton" href="#contact" target="_blank" rel="noopener">Demander ce programme</a>
+<span>Contenu et durée adaptables à votre contexte</span>
+</div>
+</article>
+</div>
+</section>
+
+<section id="publics" class="publics conteneur">
+<h2 class="titre-section">Pour qui ?</h2>
+<div class="cartes">
+<div class="carte">
+<h3>Professionnels</h3>
+<p>Montée en compétences d’équipes de développement, sur un sujet ciblé ou un parcours complet.</p>
+</div>
+<div class="carte">
+<h3>Personnes en reconversion</h3>
+<p>Des parcours progressifs, des fondamentaux jusqu’au projet, pour devenir opérationnel.</p>
+</div>
+<div class="carte">
+<h3>Étudiants</h3>
+<p>Des modules qui complètent un cursus avec une approche concrète et professionnelle.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="conteneur contact-grille">
+<div class="contact-texte">
+<h2>Un projet de formation ?</h2>
+<p>Décrivez votre public et vos objectifs : nous vous proposons un programme adapté.</p>
+</div>
+<a id="lien-contact" class="bouton bouton-inverse" href="#contact" target="_blank" rel="noopener">Remplir le formulaire de contact</a>
+</div>
+</section>
+</main>
+
+<footer class="pied conteneur">
+<span>© Formations pour développeurs</span>
+<span>Conception et animation de formations · Depuis 2018</span>
+</footer>
+
+<script src="formations.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
