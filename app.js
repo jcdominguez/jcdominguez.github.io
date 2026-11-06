@@ -43,6 +43,7 @@ function afficherListe(visibles) {
   const elements = visibles.map((formation) => {
     const bouton = creerBouton("element", formation.num === etat.selection, () => {
       etat.selection = formation.num;
+      window.umami?.track("Programme consulté", { formation: formation.titre });
       afficher();
     });
     const corps = creer("span", "element-corps");
@@ -67,6 +68,7 @@ function afficherProgramme(formation) {
   noeud("p-objectif").textContent = formation.objectif;
   noeud("p-public").textContent = formation.public;
   noeud("p-demande").href = `${TALLY_URL}?formation=${encodeURIComponent(formation.titre)}`;
+  noeud("p-demande").dataset.umamiEventFormation = formation.titre;
 
   const modules = formation.modules.map((module, rang) => {
     const ligne = creer("li");
